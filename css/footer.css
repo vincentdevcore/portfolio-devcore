@@ -1,0 +1,19 @@
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  margin: 4rem;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.6;
+
+  transition: 0.3s ease;
+}
+
+.footer-nav a:hover {
+  opacity: 1;
+}

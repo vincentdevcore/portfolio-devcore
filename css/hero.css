@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem;
+}
+
+.hero h1 {
+  font-size: 60px;
+}
+
+.hero nav {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 2rem;
+}
+
+.hero nav a {
+  color: var(--color-text-first);
+  font-size: 20px;
+  text-decoration: none;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.hero nav a:hover {
+  color: var(--color-text-secondary);
+  transform: translateY(4px);
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 600px;
+  width: 100%;
+  margin: 2rem;
+
+  gap: 2rem;
+}
+
+.availability {
+  margin: 2rem;
+
+  text-align: center;
+  font-size: 12px;
+}
+
+.subtitle {
+  text-align: left;
+  align-self: flex-end;
+  max-width: 500px;
+}

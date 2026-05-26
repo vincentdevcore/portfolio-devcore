@@ -1,0 +1,152 @@
+.card1,
+.card3 {
+  background: var(--background--inverse);
+}
+
+.card2 {
+  background: var(--background-about);
+}
+
+.project-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: 2rem;
+  padding: 2rem;
+
+  border-top: var(--border);
+  border-left: var(--border);
+  border-radius: var(--radius-lg);
+  gap: 2rem;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-content {
+  line-height: 1.8;
+  width: 100%;
+  max-width: 900px;
+}
+
+.project-content p {
+  text-align: left;
+}
+
+.project-content h3 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.project-content .description {
+  margin-top: 3rem;
+}
+
+.project-img {
+  flex: 1;
+}
+
+.project-img img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: var(--radius-sm);
+}
+
+.project-img-kwerel {
+  flex: 1;
+}
+
+.project-img-kwerel img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: var(--radius-sm);
+}
+
+.imgarmor {
+  justify-content: center;
+}
+
+.imgpresentation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.imgpresentation img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.project-content-admin-panel {
+  width: 100%;
+
+  margin-top: 2rem;
+}
+
+.project-content-admin-panel img {
+  width: 100%;
+  max-width: 300px;
+  margin: 2rem;
+  height: auto;
+  border-radius: var(--radius-sm);
+}
+
+.project-content-bracket {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imgBracket {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.imgBracket img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-top: 2rem;
+  border-radius: var(--radius-sm);
+}
+
+.imghellcoming,
+.imgvetement,
+.imgAdminPanel,
+.imgB {
+  rotate: -3deg;
+}
+
+.imgpanneau,
+.imgkwerel,
+.imgBnextFight,
+.imgBwin {
+  rotate: 3deg;
+  z-index: 2;
+}

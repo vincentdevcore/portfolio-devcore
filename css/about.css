@@ -1,0 +1,32 @@
+.about {
+  display: flex;
+  justify-content: center;
+
+  margin: 5rem 2rem 2rem;
+  padding: 3rem;
+
+  background: var(--background-about);
+  box-shadow: var(--box-shadows);
+
+  border-top: var(--border);
+  border-left: var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.about-content {
+  width: 100%;
+  max-width: 900px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.about h2 {
+  align-self: flex-start;
+  margin-bottom: 2rem;
+}
+
+.about p {
+  text-align: center;
+  line-height: 1.8;
+}

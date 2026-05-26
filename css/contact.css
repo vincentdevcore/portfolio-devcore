@@ -1,0 +1,38 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 5rem 2rem;
+  padding: 5rem 2rem;
+
+  border-top: var(--border);
+  border-left: var(--border);
+  border-radius: var(--radius-lg);
+
+  background: var(--background-about);
+}
+
+.contact-content {
+  max-width: 700px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  gap: 2.5rem;
+}
+
+.contact h2 {
+  font-size: 2rem;
+}
+
+.contact p {
+  line-height: 1.8;
+}
+
+.contact-mail {
+  opacity: 0.7;
+  font-size: 14px;
+}
