@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/root.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+
     <link rel="stylesheet" href="./css/btn.css" />
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/project.css" />
@@ -20,9 +22,11 @@
       href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="hero" id="home">
+      <div class="hero-reveal"></div>
       <div class="header">
         <h1>
           Développeur Web <br />
@@ -46,7 +50,7 @@
 
     <main>
       <section class="about">
-        <div class="about-content">
+        <div class="about-content reveal">
           <h2>Qui suis-je ?</h2>
           <p>
             Passionné par le web design et le développement, <br />
@@ -57,7 +61,7 @@
       </section>
       <section class="projects" id="project">
         <article class="project-card card1">
-          <div class="project-content flex">
+          <div class="project-content flex reveal">
             <h3>Hell Coming</h3>
             <p>Projet réalisé au sein de mon stage chez EPI Studio</p>
             <p class="description">
@@ -67,16 +71,82 @@
               art pour le dessin
             </p>
           </div>
-          <div class="project-img flex">
+          <div class="project-img flex reveal">
             <img
-              class="imghellcoming"
+              class="imghellcoming fullscreen-image"
               src="./img/hellcoming.fr_.png"
               alt="Aperçu du site Hell Coming"
             />
           </div>
+          <div class="project-caroussel reveal">
+            <p>
+              Création d’un carousel interactif afin de mettre en valeur les
+              œuvres et offrir une lecture visuelle plus immersive du catalogue.
+            </p>
+            <video
+              id="videoHellComing"
+              autoplay
+              muted
+              playsinline
+              disablepictureinpicture
+              preload="metadata"
+            >
+              <source src="./clip/carousselHellComing.webm" type="video/webm" />
+              <source src="./clip/carousselHellComing.mp4" type="video/mp4" />
+              Votre navigateur ne prend pas en charge la balise VIDEO
+            </video>
+          </div>
+
+          <div class="project-logo reveal">
+            <div class="project-logo-img reveal">
+              <img
+                class="imgLogoHellComing fullscreen-image"
+                src="./img/Hellcomingpopuplogo.png"
+                alt="Logo du site Hell Coming"
+              />
+            </div>
+            <p>
+              Création du logo et intégration d’éléments visuels afin de
+              construire une identité cohérente avec l’univers artistique et
+              immersif de Hell Coming.
+            </p>
+          </div>
+          <div class="Project-pop-up reveal">
+            <p>
+              Les œuvres et éléments interactifs ont été pensés avec un
+              affichage en pop-up afin d’améliorer l’expérience utilisateur et
+              la mise en valeur du contenu.
+            </p>
+            <div class="Project-pop-up-img reveal">
+              <img
+                class="imgPersoHellComing fullscreen-image"
+                src="./img/HellcomingPersonnalisation.png"
+                alt="Personnalisation des produits"
+              />
+              <img
+                class="imgTailleHellComing fullscreen-image"
+                src="./img/HellcomingpopupTaille.png"
+                alt="Guide des tailles"
+              />
+            </div>
+          </div>
+          <div class="intervention reveal">
+            <h3>Mon intervention :</h3>
+            <p>
+              - Collaboration avec la cliente sur la conception de l’interface
+              et de l’identité visuelle via Figma. <br />
+              - Développement front-end du projet avec intégration HTML/CSS.
+              <br />
+              - Création des animations et mise en page responsive. <br />
+              - Conception du logo et intégration d’éléments visuels cohérents
+              avec l’univers du projet. <br />
+              - Développement des interactions cliquables avec affichage
+              dynamique des contenus.
+            </p>
+          </div>
         </article>
-        <article class="project-card card2">
-          <div class="project-content flex">
+        <article class="project-card card2 reveal">
+          <div class="project-content flex reveal">
             <h3>Armor Argoat</h3>
             <p>
               Projet réalisé pour une entreprise de marbrerie, celle-ci désirait
@@ -84,28 +154,28 @@
               corps de métier.
             </p>
           </div>
-          <div class="project-img flex">
+          <div class="project-img flex reveal">
             <img
-              class="imgarmor"
+              class="imgarmor fullscreen-image"
               src="./img/lgoMsansfond2.png"
               alt="Aperçu du du logo"
             />
             <div class="imgpresentation">
               <img
-                class="imgpanneau"
+                class="imgpanneau fullscreen-image"
                 src="./img/logoPanneau.jpg"
                 alt="Aperçu du logo sur panneau"
               />
               <img
-                class="imgvetement"
+                class="imgvetement fullscreen-image"
                 src="./img/logoVetement.png"
                 alt="Aperçu du logo sur vêtement"
               />
             </div>
           </div>
         </article>
-        <article class="project-card card3">
-          <div class="project-content flex">
+        <article class="project-card card3 reveal">
+          <div class="project-content flex reveal">
             <h3>Kwerel SF6</h3>
 
             <p>
@@ -113,39 +183,43 @@
               des tournois de Street Fighter 6
             </p>
           </div>
-          <div class="project-img-kwerel flex">
+          <div class="project-img-kwerel flex reveal">
             <img
-              class="imgkwerel"
+              class="imgkwerel fullscreen-image"
               src="./img/Site Kwerel.png"
               alt="Aperçu du site SF6"
             />
           </div>
 
-          <div class="project-content-admin-panel flex">
+          <div class="project-content-admin-panel flex reveal">
             <p>
               Avec un panel admin afin de gérer les inscriptions et le bracket
               du tournoi
             </p>
             <img
-              class="imgAdminPanel"
+              class="imgAdminPanel fullscreen-image"
               src="./img/Site KwerelAdminPanel.png"
               alt="Admin Panel"
             />
           </div>
-          <div class="project-content-bracket">
+          <div class="project-content-bracket reveal">
             <p>
               Pour ne pas rester que sur un visuel du jeu une animation du
               tournoi à été crée afin de rendre les lives plus attractif
             </p>
-            <div class="imgBracket">
+            <div class="imgBracket reveal">
               <img
-                class="imgBnextFight"
+                class="imgBnextFight fullscreen-image"
                 src="./img/Site KwerelNextFight.png"
                 alt=""
               />
-              <img class="imgB" src="./img/Site Kwerelbracket.png" alt="" />
               <img
-                class="imgBwin"
+                class="imgB fullscreen-image"
+                src="./img/Site Kwerelbracket.png"
+                alt=""
+              />
+              <img
+                class="imgBwin fullscreen-image"
                 src="./img/Site Kwerelbracketwin.png"
                 alt=""
               />
@@ -153,8 +227,8 @@
           </div>
         </article>
       </section>
-      <section class="contact" id="contact">
-        <div class="contact-content">
+      <section class="contact reveal" id="contact">
+        <div class="contact-content reveal">
           <h2>Un projet en tête ?</h2>
 
           <p>
@@ -174,5 +248,10 @@
       <a href="#project">Projets</a>
       <a href="#contact">Contact</a>
     </footer>
+    <div class="image-modal">
+      <span class="close-modal">&times;</span>
+
+      <img class="modal-image" src="" alt="Preview projet" />
+    </div>
   </body>
 </html>

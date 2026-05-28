@@ -15,7 +15,7 @@
 
 .about-content {
   width: 100%;
-  max-width: 900px;
+  /* max-width: 900px; */
 
   display: flex;
   flex-direction: column;
@@ -23,7 +23,8 @@
 
 .about h2 {
   align-self: flex-start;
-  margin-bottom: 2rem;
+  font-size: 32px;
+  margin: 2rem;
 }
 
 .about p {

@@ -48,7 +48,7 @@
 }
 
 .project-content h3 {
-  font-size: 24px;
+  font-size: 32px;
   letter-spacing: 2px;
   margin-bottom: 2rem;
 }
@@ -70,6 +70,83 @@
 
 .project-img-kwerel {
   flex: 1;
+}
+
+.project-caroussel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  gap: 2rem;
+  width: 100%;
+  margin: 2rem;
+  text-align: center;
+}
+
+#videoHellComing {
+  width: 30%;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  cursor: zoom-in;
+}
+
+.project-logo,
+.Project-pop-up {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 2rem;
+}
+
+.project-logo-img,
+.Project-pop-up-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 2rem;
+}
+
+.project-logo p,
+.Project-pop-up p {
+  display: flex;
+  align-items: center;
+
+  width: 50%;
+}
+
+.project-logo img,
+.Project-pop-up-img img {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.Project-pop-up-img img {
+  max-width: 300px;
+}
+
+.intervention {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.intervention h3 {
+  font-size: 32px;
+  margin: 2rem;
+}
+
+.intervention p {
+  /* color: blue; */
+  line-height: 1.8;
 }
 
 .project-img-kwerel img {
@@ -139,14 +216,16 @@
 .imghellcoming,
 .imgvetement,
 .imgAdminPanel,
-.imgB {
+.imgB,
+.imgTailleHellComing {
   rotate: -3deg;
 }
 
 .imgpanneau,
 .imgkwerel,
 .imgBnextFight,
-.imgBwin {
+.imgBwin,
+.imgPersoHellComing {
   rotate: 3deg;
   z-index: 2;
 }

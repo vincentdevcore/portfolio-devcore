@@ -13,3 +13,7 @@ body {
   background: var(--background-body);
   color: var(--color-text-first);
 }
+
+body p {
+  font-size: 20px;
+}
