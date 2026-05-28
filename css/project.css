@@ -156,6 +156,55 @@
   border-radius: var(--radius-sm);
 }
 
+.project-content-armor {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4rem;
+
+  width: 100%;
+}
+
+.project-armor {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.5rem;
+}
+
+.project-armor h4 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.project-armor img {
+  width: 100%;
+  max-width: 320px;
+
+  margin: 0 auto;
+
+  border-radius: var(--radius-sm);
+}
+
+.project-armor p {
+  line-height: 1.8;
+}
+
+/* 2 images artisan */
+.armor-artisan {
+  display: flex;
+  justify-content: center;
+
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.armor-artisan img {
+  max-width: 260px;
+}
+
 .imgarmor {
   justify-content: center;
 }
@@ -169,8 +218,9 @@
 
 .imgpresentation img {
   width: 100%;
-  max-width: 200px;
+  max-width: 300px;
   height: auto;
+  border-radius: var(--radius-sm);
 }
 
 .project-content-admin-panel {

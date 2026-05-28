@@ -39,7 +39,7 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.5,
+    threshold: 0.1,
   },
 );
 
@@ -91,14 +91,14 @@ video.addEventListener("ended", () => {
 
     video.style.filter = "blur(0px) brightness(1)";
   }, 120);
+});
 
-  video.addEventListener("click", () => {
-    if (video.requestFullscreen) {
-      video.requestFullscreen();
-    } else if (video.webkitRequestFullscreen) {
-      video.webkitRequestFullscreen();
-    } else if (video.msRequestFullscreen) {
-      video.msRequestFullscreen();
-    }
-  });
+video.addEventListener("click", () => {
+  if (video.requestFullscreen) {
+    video.requestFullscreen();
+  } else if (video.webkitRequestFullscreen) {
+    video.webkitRequestFullscreen();
+  } else if (video.msRequestFullscreen) {
+    video.msRequestFullscreen();
+  }
 });
