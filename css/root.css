@@ -1,14 +1,19 @@
 :root {
-  --background-body: linear-gradient(#121212, #353535);
-  --background-about: linear-gradient(to right, #121212, #353535);
-  --background--inverse: linear-gradient(to left, #121212, #353535);
+  /* --background-body: linear-gradient(#121212, #353535); */
+  --background-body: linear-gradient(#121212, #2e4460);
+  /* --background-about: linear-gradient(to right, #121212, #353535); */
+  --background-about: linear-gradient(to right, #121212, #2e4460);
+  /* --background--inverse: linear-gradient(to left, #121212, #353535); */
+  --background--inverse: linear-gradient(to left, #121212, #2e4460);
   --background-btn: #092355;
   --color-text-first: #f5f5f5;
+
   --color-text-secondary: #b8b8b8;
   --box-shadows: 10px 5px 5px #121212;
   --border: solid 1px #818181;
   --hover-li: #092455;
   --text-shadow: 0 0 1em blue, 0 0 0.2em blue;
+  /* --text-shadow: 0 0 1em gold, 0 0 0.2em gold; */
   --radius-sm: 10px;
   --radius-lg: 15px;
 }

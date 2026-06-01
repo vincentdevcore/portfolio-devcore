@@ -16,6 +16,7 @@
   margin: 2rem;
   padding: 2rem;
 
+  box-shadow: var(--box-shadows);
   border-top: var(--border);
   border-left: var(--border);
   border-radius: var(--radius-lg);
@@ -27,7 +28,8 @@
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
+  transform: translate(3px, 3px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 .flex {
@@ -47,10 +49,14 @@
   text-align: left;
 }
 
-.project-content h3 {
+.project-content h3,
+.project-content-armor h3 {
   font-size: 32px;
   letter-spacing: 2px;
   margin-bottom: 2rem;
+}
+.project-content-armor h3 {
+  margin-top: 2rem;
 }
 
 .project-content .description {
@@ -145,7 +151,6 @@
 }
 
 .intervention p {
-  /* color: blue; */
   line-height: 1.8;
 }
 
@@ -172,11 +177,12 @@
   flex-direction: column;
 
   gap: 1.5rem;
+  text-align: center;
 }
 
 .project-armor h4 {
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .project-armor img {

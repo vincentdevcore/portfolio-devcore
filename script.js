@@ -15,7 +15,7 @@ hero.addEventListener("mousemove", (e) => {
 
   const speed = Math.min(Math.sqrt(velocityX ** 2 + velocityY ** 2), 35);
 
-  const width = 110 + speed;
+  const width = 130 + speed;
   const height = 90 - speed * 0.2;
 
   reveal.style.clipPath = `ellipse(${width}px ${height}px at ${x}px ${y}px)`;
