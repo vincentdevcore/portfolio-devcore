@@ -17,3 +17,38 @@ body {
 body p {
   font-size: 20px;
 }
+
+.testimonial {
+  margin: 5rem 2rem;
+  text-align: center;
+}
+
+.testimonial-card {
+  /* max-width: 800px; */
+  margin: 2rem auto;
+  padding: 3rem;
+
+  background: var(--background-about);
+
+  border-top: var(--border);
+  border-left: var(--border);
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--box-shadows);
+}
+
+.testimonial-card h2 {
+  padding: 2rem;
+}
+
+.testimonial-text {
+  font-size: 22px;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: block;
+  margin-top: 2rem;
+  opacity: 0.7;
+}
