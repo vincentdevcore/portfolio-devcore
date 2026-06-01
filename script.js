@@ -5,6 +5,7 @@ let lastX = 0;
 let lastY = 0;
 
 hero.addEventListener("mousemove", (e) => {
+  if (window.innerWidth <= 1024) return;
   const rect = hero.getBoundingClientRect();
 
   const x = e.clientX - rect.left;
