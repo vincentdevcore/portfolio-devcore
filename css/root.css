@@ -1,9 +1,8 @@
 :root {
-  /* --background-body: linear-gradient(#121212, #353535); */
   --background-body: linear-gradient(#121212, #2e4460);
-  /* --background-about: linear-gradient(to right, #121212, #353535); */
+
   --background-about: linear-gradient(to right, #121212, #2e4460);
-  /* --background--inverse: linear-gradient(to left, #121212, #353535); */
+
   --background--inverse: linear-gradient(to left, #121212, #2e4460);
   --background-btn: #092355;
   --color-text-first: #f5f5f5;
