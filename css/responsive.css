@@ -5,7 +5,7 @@
 
   .hero {
     min-height: auto;
-    padding: 2rem 1rem 4rem;
+    padding: 0.5rem 1rem 4rem;
   }
 
   .header {
@@ -181,6 +181,12 @@
     gap: 1rem;
     margin: 2rem 1rem;
     text-align: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .hero-reveal {
+    margin-top: 17%;
   }
 }
 
