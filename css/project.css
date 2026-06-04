@@ -39,6 +39,55 @@
   align-items: center;
 }
 
+.presentation-project {
+  padding: 4rem 2rem;
+}
+
+/* TITRE */
+.presentation-project-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.presentation-project-title h2 {
+  font-size: 32px;
+}
+
+/* CONTAINER */
+.container-presentation-project {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* CARDS */
+.container-presentation-project .project-card {
+  display: flex;
+  justify-content: center;
+  width: 450px;
+  padding: 1.5rem;
+  border-radius: 20px;
+  text-align: center;
+
+  background: var(--background-body);
+
+  transition: transform 0.3s ease;
+}
+
+.presentation-project-img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 12px;
+}
+
+.presentation-project-img-kwerel {
+  width: 100%;
+  border-radius: 12px;
+}
+
 .project-content {
   line-height: 1.8;
   width: 100%;
